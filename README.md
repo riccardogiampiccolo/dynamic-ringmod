@@ -36,7 +36,7 @@ The repository includes the following main files:
 
 ## Usage
 
-To utilize this code, clone the repository and execute `dynamic_RingModulator_SIM.m` in MATLAB or `python/dynamic_RingModulator.py` with a Python IDE. Choose a different diode solver function within `dynamic_RingModulator_SIM.m` to experiment with different methods.
+To utilize this code, clone the repository and execute `dynamic_RingModulator_SIM.m` in MATLAB or `python/dynamic_RingModulator.py` within a Python IDE. Choose a different diode solver function within `dynamic_RingModulator_SIM.m` to experiment with different methods.
 
 ## Coming Soon
 
