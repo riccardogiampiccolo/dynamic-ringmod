@@ -41,8 +41,10 @@ To utilize this code, clone the repository and execute `dynamic_RingModulator_SI
 ## Coming Soon
 
 A MATLAB implementation of the method presented in: 
+
 - A. Bernardini, E. Bozzo, F. Fontana and A. Sarti, **"A Wave Digital Newton-Raphson Method for Virtual Analog Modeling of Audio Circuits with Multiple One-Port Nonlinearities,"** in _IEEE/ACM Transactions on Audio, Speech, and Language Processing_, vol. 29, pp. 2162-2173, 2021, [doi: 10.1109/TASLP.2021.3084337](https://ieeexplore.ieee.org/document/9442893).
-will be made available soon.
+  
+will be made available in the future.
 **Feel free to explore, experiment, and contribute to the codebase!**
 If you have any questions or suggestions, please create an issue or reach out.
 
