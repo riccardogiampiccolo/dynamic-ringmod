@@ -1,6 +1,6 @@
 # Wave Digital Filter Implementation of a Dynamic Ring Modulator
 
-This repository contains MATLAB code for implementing the following dynamic ring modulator in the Wave Digital (WD) domain. A Python version of the implementation will be available soon.
+This repository contains both MATLAB and Python code for implementing the following dynamic ring modulator in the Wave Digital (WD) domain. 
 
 ![Schematic](/ringmod.png "Circuit schematic.")
 
@@ -19,6 +19,7 @@ The code within this repository offers an implementation of a dynamic ring modul
 ## Functionality
 
 The MATLAB code includes various functions allowing users to select different methods for solving diodes. Users can explore and choose among these functions for their specific requirements.
+The Python implementation, instead, makes use just of the Newton-Raphson solver.
 
 ## Files
 
@@ -31,14 +32,17 @@ The repository includes the following main files:
 - `lib/diodeNRsolver.m`: MATLAB functions for solving diodes using a Newton-Rapshon solver, as shown in Ref. 1, 2.
 - `LTspice/dynamic_RingModulator.asc`: LTspice schematic of the dynamic ring modulator. You can download the freeware software at this [link](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html). Both Windows and macOS are available.
 - `LTspice/ltspice_Vout.txt`: File containing the output voltage points obtained within LTspice. Such a file is used as ground-truth.
+- `python/dynamic_RingModulator.py`: Python script for the dynamic ring modulator implementation. It implements SIM and just the Newton-Raphson method for solving diodes.
 
 ## Usage
 
-To utilize this code, clone the repository and execute `dynamic_RingModulator_SIM.m` in MATLAB. Choose a different diode solver function within `dynamic_RingModulator_SIM.m` to experiment with different methods.
+To utilize this code, clone the repository and execute `dynamic_RingModulator_SIM.m` in MATLAB or `python/dynamic_RingModulator.py` with a Python IDE. Choose a different diode solver function within `dynamic_RingModulator_SIM.m` to experiment with different methods.
 
 ## Coming Soon
 
-An upcoming **Python version** of the implementation will be made available soon.
+A MATLAB implementation of the method presented in: 
+- A. Bernardini, E. Bozzo, F. Fontana and A. Sarti, **"A Wave Digital Newton-Raphson Method for Virtual Analog Modeling of Audio Circuits with Multiple One-Port Nonlinearities,"** in _IEEE/ACM Transactions on Audio, Speech, and Language Processing_, vol. 29, pp. 2162-2173, 2021, [doi: 10.1109/TASLP.2021.3084337](https://ieeexplore.ieee.org/document/9442893).
+will be made available soon.
 **Feel free to explore, experiment, and contribute to the codebase!**
 If you have any questions or suggestions, please create an issue or reach out.
 
