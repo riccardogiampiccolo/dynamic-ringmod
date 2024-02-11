@@ -46,7 +46,7 @@ function [b, r] = DiodeWrightOmega(a, Z)
     expArg = exp(arg);
 
     if expArg==inf
-        b = -(dd/cc) - LightweightWrightOmega(arg,4)/aa;
+        b = -(dd/cc) - FastWrightOmega(arg,4)/aa;
     else
         b = -(dd/cc) - LambertW(expArg)/aa;
     end
